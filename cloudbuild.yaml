@@ -13,9 +13,9 @@ steps:
   
 # Steps to build a docker image for go-microservice, push it to container registry and deploy it to cloud run.  
 - name: "gcr.io/cloud-builders/docker"
-  args: ['build', '-t', 'gcr.io/chicago_business_intelligence3/go-microservice','.']
+  args: ['build', '-t', 'gcr.io/chicago_business_intelligence/go-microservice','.']
 - name: "gcr.io/cloud-builders/docker"
-  args: ['push', 'gcr.io/chicago_business_intelligence3/go-microservice']
+  args: ['push', 'gcr.io/chicago_business_intelligence/go-microservice']
   
 - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
   entrypoint: gcloud
