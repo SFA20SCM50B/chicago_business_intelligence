@@ -163,7 +163,7 @@ func main() {
 
 	// OPTION 2
 	// Docker container for the Postgres microservice - uncomment when deploy with host.docker.internal
-	db_connection := "user=postgres dbname=chicago_business_intelligence password=root host=postgresdb port=5432 sslmode=disable"
+	db_connection := "user=postgres dbname=chicago_business_intelligence password=root host=pg-admin port=5432 sslmode=disable"
 	// OPTION 3
 	// Docker container for the Postgress microservice - uncomment when deploy with IP address of the container
 	// To find your Postgres container IP, use the command with your network name listed in the docker compose file as follows:
