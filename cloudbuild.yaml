@@ -3,9 +3,9 @@ steps:
 - name: "gcr.io/cloud-builders/docker"
   args: ['pull', 'dpage/pgadmin4']
 - name: "gcr.io/cloud-builders/docker"
-  args: ['tag', 'dpage/pgadmin4','gcr.io/chicago_business_intelligence3/pgadmin']
+  args: ['tag', 'dpage/pgadmin4','gcr.io/chicago_business_intelligence/pgadmin']
 - name: "gcr.io/cloud-builders/docker"
-  args: ['push', 'gcr.io/chicago_business_intelligence3/pgadmin']
+  args: ['push', 'gcr.io/chicago_business_intelligence/pgadmin']
   
 - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
   entrypoint: gcloud
