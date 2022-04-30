@@ -4,6 +4,7 @@ WORKDIR /app
 COPY go.mod ./
 COPY go.sum ./
 RUN go mod tidy
+EXPOSE 8080
 COPY . ./
 RUN go build -o /main
 CMD [ "/main" ]
